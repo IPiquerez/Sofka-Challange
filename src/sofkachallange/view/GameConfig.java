@@ -126,6 +126,42 @@ public class GameConfig extends JPanel {
 					.addContainerGap())
 		);
 		setLayout(groupLayout);
-		
 	}
+	public JTextField getTextFldQuestion() {
+		return textFldQuestion;
+	}
+	public void setTextFldQuestion(JTextField textFldQuestion) {
+		this.textFldQuestion = textFldQuestion;
+	}
+	public JTextField getTextFldAnsw1() {
+		return textFldAnsw1;
+	}
+	public void setTextFldAnsw1(JTextField textFldAnsw1) {
+		this.textFldAnsw1 = textFldAnsw1;
+	}
+	public JTextField getTextFldAnsw2() {
+		return textFldAnsw2;
+	}
+	public void setTextFldAnsw2(JTextField textFldAnsw2) {
+		this.textFldAnsw2 = textFldAnsw2;
+	}
+	public JTextField getTextFldAnsw3() {
+		return textFldAnsw3;
+	}
+	public void setTextFldAnsw3(JTextField textFldAnsw3) {
+		this.textFldAnsw3 = textFldAnsw3;
+	}
+	public JTextField getTextAnswValid() {
+		return textAnswValid;
+	}
+	public void setTextAnswValid(JTextField textAnswValid) {
+		this.textAnswValid = textAnswValid;
+	}
+	public JComboBox<Integer> getComboBoxCategory() {
+		return comboBoxCategory;
+	}
+	public void setComboBoxCategory(JComboBox<Integer> comboBoxCategory) {
+		this.comboBoxCategory = comboBoxCategory;
+	}
+	
 }

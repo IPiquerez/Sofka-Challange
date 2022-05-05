@@ -10,21 +10,24 @@ import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 
 
-@SuppressWarnings("serial")
-public class MainWindow extends JFrame {
+public class MainWindow{
 
 	private JPanel contentPane;
+	private JButton btnConfGame;
+	private JButton btnStart;
+	private JFrame frame;
 	
 	public MainWindow() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		frame = new JFrame("Preguntas");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setBounds(100, 100, 650, 400);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
+		frame.setContentPane(contentPane);
 		
-		JButton btnConfGame = new JButton("Configurar Juego");
+		btnConfGame = new JButton("Configurar Juego");
 		
-		JButton btnStart = new JButton("Iniciar el juego");
+		btnStart = new JButton("Iniciar el juego");
 		
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
@@ -46,5 +49,41 @@ public class MainWindow extends JFrame {
 					.addContainerGap(117, Short.MAX_VALUE))
 		);
 		contentPane.setLayout(gl_contentPane);
+		frame.setVisible(true);
 	}
+
+	public JPanel getContentPane() {
+		return contentPane;
+	}
+
+	public void setContentPane(JPanel contentPane) {
+		this.contentPane = contentPane;
+	}
+
+	public JButton getBtnConfGame() {
+		return btnConfGame;
+	}
+
+	public void setBtnConfGame(JButton btnConfGame) {
+		this.btnConfGame = btnConfGame;
+	}
+
+	public JButton getBtnStart() {
+		return btnStart;
+	}
+
+	public void setBtnStart(JButton btnStart) {
+		this.btnStart = btnStart;
+	}
+
+	public JFrame getFrame() {
+		return frame;
+	}
+
+	public void setFrame(JFrame frame) {
+		this.frame = frame;
+	}
+	
+	
+	
 }

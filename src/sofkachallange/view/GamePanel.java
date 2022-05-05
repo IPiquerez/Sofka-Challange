@@ -30,6 +30,7 @@ public class GamePanel extends JPanel {
 	
 	private JLabel lblAward;
 	
+
 	/**
 	 * Create the panel.
 	 */
@@ -114,4 +115,75 @@ public class GamePanel extends JPanel {
 		setLayout(groupLayout);
 	}
 
+	public JButton getBtnAnsw1() {
+		return btnAnsw1;
+	}
+
+	public void setBtnAnsw1(JButton btnAnsw1) {
+		this.btnAnsw1 = btnAnsw1;
+	}
+
+	public JButton getBtnAnsw2() {
+		return btnAnsw2;
+	}
+
+	public void setBtnAnsw2(JButton btnAnsw2) {
+		this.btnAnsw2 = btnAnsw2;
+	}
+
+	public JButton getBtnAnsw3() {
+		return btnAnsw3;
+	}
+
+	public void setBtnAnsw3(JButton btnAnsw3) {
+		this.btnAnsw3 = btnAnsw3;
+	}
+
+	public JButton getBtnAnsw4() {
+		return btnAnsw4;
+	}
+
+	public void setBtnAnsw4(JButton btnAnsw4) {
+		this.btnAnsw4 = btnAnsw4;
+	}
+
+	public JLabel getLblQuestion() {
+		return lblQuestion;
+	}
+
+	public void setLblQuestion(JLabel lblQuestion) {
+		this.lblQuestion = lblQuestion;
+	}
+
+	public JButton getBtnEnd() {
+		return btnEnd;
+	}
+
+	public void setBtnEnd(JButton btnEnd) {
+		this.btnEnd = btnEnd;
+	}
+
+	public JLabel getLblPoints() {
+		return lblPoints;
+	}
+
+	public void setLblPoints(JLabel lblPoints) {
+		this.lblPoints = lblPoints;
+	}
+
+	public JLabel getLblLevel() {
+		return lblLevel;
+	}
+
+	public void setLblLevel(JLabel lblLevel) {
+		this.lblLevel = lblLevel;
+	}
+
+	public JLabel getLblAward() {
+		return lblAward;
+	}
+
+	public void setLblAward(JLabel lblAward) {
+		this.lblAward = lblAward;
+	}
 }
