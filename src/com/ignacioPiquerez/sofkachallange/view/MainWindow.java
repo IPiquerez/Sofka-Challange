@@ -1,4 +1,4 @@
-package sofkachallange.view;
+package com.ignaciopiquerez.sofkachallange.view;
 
 
 

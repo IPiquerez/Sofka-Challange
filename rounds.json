@@ -1,0 +1,327 @@
+[
+{
+	"award": 100,
+	"number": 1,
+	"category": {
+		"dificultyLevel": 1,
+		"questions": 
+		[
+		{"content": "¿Quién es el autor de el Quijote?",
+		"answers" : [
+		{"content": "Miguel Cervantes",
+		"valid" : true},
+		{"content": "Miguel Granados",
+		"valid" : false},
+		{"content": "William Shakespeare",
+		"valid" : false},
+		{"content": "Alejandra Pizarnik",
+		"valid" : false}
+		]},
+		{"content": "¿Qué era naranjito, la mascota del mundial España 1982?",
+		"answers" : [
+		{"content": "Una naranja",
+		"valid" : true},
+		{"content": "Una mandarina",
+		"valid" : false},
+		{"content": "Un pomelo",
+		"valid" : false},
+		{"content": "Un limón",
+		"valid" : false}
+		]},
+		{"content": "¿Qué celebran los cristianos el 25 de diciembre?",
+		"answers" : [
+		{"content": "La muerte de Jesus",
+		"valid" : false},
+		{"content": "El nacimiento de Jesus",
+		"valid" : true},
+		{"content": "La resurección de Jesus",
+		"valid" : false},
+		{"content": "La crucifixión de Jesus",
+		"valid" : false}
+		]},
+		{"content": "¿En qué país nació Jorge Luis Borges? ",
+		"answers" : [
+		{"content": "Uruguay",
+		"valid" : false},
+		{"content": "Paraguay",
+		"valid" : false},
+		{"content": "Argentina",
+		"valid" : true},
+		{"content": "Chile",
+		"valid" : false}
+		]},
+		{"content": "¿Qué perdió el soldadito de plomo?",
+		"answers" : [
+		{"content": "Una pierna",
+		"valid" : true},
+		{"content": "Su rifle",
+		"valid" : false},
+		{"content": "Un brazo",
+		"valid" : false},
+		{"content": "Su casco",
+		"valid" : false}
+		]}
+		]
+}
+},
+{
+	"award": 300,
+	"number": 2,
+	"category": {
+		"dificultyLevel": 2,
+		"questions": 
+		[
+		{"content": "¿Harry Potter fue escrita por?",
+		"answers" : [
+		{"content": "George R.R.Martin",
+		"valid" : false},
+		{"content": "J.R.R.Tolkien",
+		"valid" : false},
+		{"content": "P.N.Elrod",
+		"valid" : false},
+		{"content": "J.K.Rowling",
+		"valid" : true}
+		]},
+		{"content": "¿Cómo se llama el escudero de Don Quijote?",
+		"answers" : [
+		{"content": "Sancho Panza",
+		"valid" : true},
+		{"content": "Rocinante",
+		"valid" : false},
+		{"content": "Capitán Ahad",
+		"valid" : false},
+		{"content": "Ricote",
+		"valid" : false}
+		]},
+		{"content": "¿Cuánto duró la Guerra de los Cien Años?",
+		"answers" : [
+		{"content": "99 años",
+		"valid" : false},
+		{"content": "116 años",
+		"valid" : true},
+		{"content": "100 años",
+		"valid" : false},
+		{"content": "101 años",
+		"valid" : false}
+		]},
+		{"content": "¿Cómo despertó el príncipe a la Bella Durmiente? ",
+		"answers" : [
+		{"content": "Con un beso del principe",
+		"valid" : true},
+		{"content": "Con el pichanzo de una aguja",
+		"valid" : false},
+		{"content": "Con un hechizo",
+		"valid" : false},
+		{"content": "Con un beso de un sapo",
+		"valid" : false}
+		]},
+		{"content": "¿Qué carabela no volvió del viaje en el que Colón arribó a América por primera vez?",
+		"answers" : [
+		{"content": "La Pinta",
+		"valid" : false},
+		{"content": "Santa Ana",
+		"valid" : false},
+		{"content": "La Niña",
+		"valid" : false},
+		{"content": "Santa María",
+		"valid" : true}
+		]}
+		]
+}
+},
+{
+	"award": 500,
+	"number": 3,
+	"category": {
+		"dificultyLevel": 3,
+		"questions": 
+		[
+		{"content": "¿¿Quién escribió La Divina Comedia?",
+		"answers" : [
+		{"content": "Miguel Cervantes",
+		"valid" : false},
+		{"content": "Nicolás Machiavelo",
+		"valid" : false},
+		{"content": "Dante Alighieri",
+		"valid" : true},
+		{"content": "Italo Calvino",
+		"valid" : false}
+		]},
+		{"content": "¿Qué isla sirvió de prisión para Napoleón tras su derrota en la batalla de Waterloo?",
+		"answers" : [
+		{"content": "Santa Elena",
+		"valid" : true},
+		{"content": "Santa Marta",
+		"valid" : false},
+		{"content": "Santa María",
+		"valid" : false},
+		{"content": "Santa Ana",
+		"valid" : false}
+		]},
+		{"content": "¿Cuál compositor de música clásica era zurdo?",
+		"answers" : [
+		{"content": "Beethoven",
+		"valid" : true},
+		{"content": "Schubert",
+		"valid" : false},
+		{"content": "Johann Sebastian",
+		"valid" : false},
+		{"content": "Vivaldi",
+		"valid" : false}
+		]},				
+		{"content": "¿En qué idioma están escritos los manuscritos más antiguos pertenecientes a la parte de la Biblia que hoy conocemos como Nuevo Testamento?",
+		"answers" : [
+		{"content": "En variante del latín",
+		"valid" : false},
+		{"content": "En variante del griego antiguo",
+		"valid" : true},
+		{"content": "En variante de nórdico antiguo",
+		"valid" : false},
+		{"content": "En variante de proto-celta",
+		"valid" : false}
+		]},
+		{"content": "¿En qué ciudad nació el pintor y escultor Joan Miro? ",
+		"answers" : [
+		{"content": "Sevilla",
+		"valid" : true},
+		{"content": "Madrid",
+		"valid" : false},
+		{"content": "Barcelona",
+		"valid" : true},
+		{"content": "Granada",
+		"valid" : false}
+		]}
+        ]
+  }
+},
+{
+	"award": 1000,
+	"number": 4,
+	"category": {
+		"dificultyLevel": 4,
+		"questions": 
+		[
+		{"content": "¿Quién pintó 'Mujer mirando por la ventana'? ?",
+		"answers" : [
+		{"content": "Vincent van Gogh",
+		"valid" : false},
+		{"content": "Rembrandt",
+		"valid" : false},
+		{"content": "Pablo Picasso",
+		"valid" : false},
+		{"content": "Salvador Dalí",
+		"valid" : true}
+		]},
+		{"content": " ¿Quiénes fueron, según la leyenda, los dos hermanos fundadores de la ciudad de Roma?",
+		"answers" : [
+		{"content": "Ramón y Roma ",
+		"valid" : false},
+		{"content": "Rómulo y Remo",
+		"valid" : true},
+		{"content": "Remigio y Renzo",
+		"valid" : false},
+		{"content": "Renato y Riccardo",
+		"valid" : false}
+		]},
+		{"content": " ¿Qué faraón egipcio es conocido por haber intentado que su imperio pasase del politeísmo al monoteísmo a través del culto al dios Atón?",
+		"answers" : [
+		{"content": "Alejandro Magno",
+		"valid" : false},
+		{"content": "Akenatón.",
+		"valid" : false},
+		{"content": "Amenhotep IV",
+		"valid" : true},
+		{"content": "Hatshepsut",
+		"valid" : false}
+		]},
+		{"content": "¿Cuántos dedos tiene por lo general una caricatura?",
+		"answers" : [
+		{"content": "Cuatro",
+		"valid" : true},
+		{"content": "Dos",
+		"valid" : false},
+		{"content": "Cinco",
+		"valid" : false},
+		{"content": "Tres",
+		"valid" : false}
+		]},
+		{"content": "¿A partir de qué suceso consideramos que termina la Edad Antigua y empieza la Edad Media?",
+		"answers" : [
+		{"content": "La caída del Imperio Nuevo Egipto",
+		"valid" : false},
+		{"content": "La caída del Imperio Ruso",
+		"valid" : false},
+		{"content": "La caída de Imperio Español",
+		"valid" : false},
+		{"content": "La caída del Imperio Romano de Occidente",
+		"valid" : true}
+		]}
+		]
+}
+},
+{
+	"award": 10000,
+	"number": 5,
+	"category": {
+		"dificultyLevel": 5,
+		"questions": 
+		[
+		{"content": "¿¿En qué año el hombre pisó la Luna por primera vez?",
+		"answers" : [
+		{"content": "En 1953",
+		"valid" : false},
+		{"content": "En 1957",
+		"valid" : false},
+		{"content": "En 1975",
+		"valid" : false},
+		{"content": "En 1969",
+		"valid" : true}
+		]},
+		{"content": "¿¿Quién fue el primer presidente de Estados Unidos?",
+		"answers" : [
+		{"content": "John Adams",
+		"valid" : false},
+		{"content": "Abraham Lincoln",
+		"valid" : false},
+		{"content": "George Washington",
+		"valid" : true},
+		{"content": "James Madison",
+		"valid" : false}
+		]},
+		{"content": "¿A que hecho histórico corresponde el dia D?",
+		"answers" : [
+		{"content": "Liberación de Paris",
+		"valid" : false},
+		{"content": "Rendición de los Nazis",
+		"valid" : false},
+		{"content": "Bombardeo sobre Londres",
+		"valid" : false},
+		{"content": "Desembarco en Normandía",
+		"valid" : true}
+		]},
+		{"content": "¿En qué año se creó la Organización de las Naciones Unidas?",
+		"answers" : [
+		{"content": "En 1945",
+		"valid" : true},
+		{"content": "En 1942",
+		"valid" : false},
+		{"content": "En 1939",
+		"valid" : false},
+		{"content": "En 1947",
+		"valid" : false}
+		]},
+		{"content": "¿Qué libros muestran lo ocurrido en la Primera Geuerra Mundial?",
+		"answers" : [
+		{"content": "El pianista",
+		"valid" : false},
+		{"content": "Todas la anteriores",
+		"valid" : true},
+		{"content": "El diario de Ana Fran",
+		"valid" : false},
+		{"content": "La vida es bella",
+		"valid" : false}
+		]}
+		]
+}
+}
+]

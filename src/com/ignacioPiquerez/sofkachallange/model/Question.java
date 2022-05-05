@@ -1,4 +1,4 @@
-package sofkachallange.model;
+package com.ignaciopiquerez.sofkachallange.model;
 
 import java.util.ArrayList;
 

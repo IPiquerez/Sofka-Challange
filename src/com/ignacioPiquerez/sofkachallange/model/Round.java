@@ -1,4 +1,4 @@
-package sofkachallange.model;
+package com.ignaciopiquerez.sofkachallange.model;
 
 public class Round {
 
@@ -7,7 +7,10 @@ public class Round {
 	private int number;
 	
 	private Category category;
-
+	
+	public Round() {
+	}
+	
 	public Round(int award, int number, Category category) {
 		super();
 		this.award = award;
