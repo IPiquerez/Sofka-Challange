@@ -5,6 +5,10 @@ public class Player {
 	private int points;
 	private int roundReached;
 	
+	public Player() {
+		this.points = 0;
+		this.roundReached = 1;
+	}
 	public int getPoints() {
 		return points;
 	}

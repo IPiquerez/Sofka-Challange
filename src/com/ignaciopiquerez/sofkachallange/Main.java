@@ -30,8 +30,8 @@ public class Main {
 	}
 	
 	private static void initialize() {
-	MainWindow frame = new MainWindow();
+	MainWindow window = new MainWindow();
 	List<Round> rounds = roundsRepo.getRounds();
-	WindowController controller = new WindowController(frame, rounds);
+	WindowController controller = new WindowController(window, rounds);
 	}
 }
