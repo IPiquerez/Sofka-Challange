@@ -1,7 +1,6 @@
 package com.ignaciopiquerez.sofkachallange.controllers;
 
 import java.awt.Color;
-import java.security.cert.CollectionCertStoreParameters;
 import java.util.Collections;
 import java.util.List;
 
@@ -13,6 +12,7 @@ import com.ignaciopiquerez.sofkachallange.model.Round;
 import com.ignaciopiquerez.sofkachallange.view.GamePanel;
 import com.ignaciopiquerez.sofkachallange.view.MainPanel;
 import com.ignaciopiquerez.sofkachallange.view.MainWindow;
+import com.ignaciopiquerez.sofkachallange.view.PlayerHistoryPanel;
 import com.ignaciopiquerez.sofkachallange.view.ResultPanel;
 
 public class WindowController {
@@ -84,11 +84,6 @@ public class WindowController {
 		System.out.println("La respuesta valida es la "+ validAnswer);
 	}
 	
-	/*
-	 * private void resetGamePanel() { currentRound =0; player = new Player(); round
-	 * = null; }
-	 */	
-	
 	private String setRoundAward(int award){
 		return String.format("Por %s puntos", Integer.toString(award));
 	}
@@ -129,6 +124,7 @@ public class WindowController {
 		panel.getLblPointsEarned().setText("Puntos obtenidos: " + player.getPoints());
 		panel.getLblRoundsReached().setText("Ultimo nivel: " + player.getRoundsReached());
 		if(win) {
+			
 			panel.getLblResult().setText("Felicitaciones, has ganado!");
 			panel.getLblResult().setForeground(Color.GREEN);
 		}
@@ -145,7 +141,10 @@ public class WindowController {
 	}
 	
 	private void playerHistory() {
-		
+		PlayerHistoryPanel panel = new PlayerHistoryPanel();
+		window.getFrame().setContentPane(panel);
+		window.getFrame().setVisible(true);
+		panel.getBtnMenu().addActionListener(e -> mainMenu());
 	}
 	
 	private void printContent() {

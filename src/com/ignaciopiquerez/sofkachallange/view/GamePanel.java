@@ -64,9 +64,9 @@ public class GamePanel extends JPanel {
 		groupLayout.setHorizontalGroup(
 			groupLayout.createParallelGroup(Alignment.TRAILING)
 				.addGroup(groupLayout.createSequentialGroup()
-					.addContainerGap(618, Short.MAX_VALUE)
+					.addGap(618)
 					.addComponent(lblLevel)
-					.addGap(596)
+					.addPreferredGap(ComponentPlacement.RELATED, 596, Short.MAX_VALUE)
 					.addComponent(lblPoints)
 					.addContainerGap())
 				.addGroup(groupLayout.createSequentialGroup()

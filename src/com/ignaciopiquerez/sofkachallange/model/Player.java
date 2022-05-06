@@ -1,7 +1,6 @@
 package com.ignaciopiquerez.sofkachallange.model;
 
 public class Player {
-
 	private int points;
 	private int roundReached;
 	
