@@ -4,6 +4,9 @@ import java.awt.Color;
 import java.util.Collections;
 import java.util.List;
 
+import javax.swing.table.DefaultTableModel;
+
+import com.ignaciopiquerez.sofkachallange.dao.PlayerDao;
 import com.ignaciopiquerez.sofkachallange.model.Answer;
 import com.ignaciopiquerez.sofkachallange.model.Category;
 import com.ignaciopiquerez.sofkachallange.model.Player;
@@ -26,11 +29,13 @@ public class WindowController {
 	private int validAnswer;
 	private Round round;
 	private boolean win;
+	private PlayerDao playerDao;
 	
 	public WindowController(MainWindow window, List<Round> rounds) {
 		super();
 		this.window = window;
 		this.rounds = rounds;
+		playerDao = new PlayerDao();
 		initController();
 	}
 	
@@ -98,7 +103,12 @@ public class WindowController {
 	
 	private void endGame(boolean win) {
 		this.win = win;
+		savePlayerData();
 		toResultPage();
+	}
+	
+	private void savePlayerData() {
+		playerDao.savePlayer(player);
 	}
 	
 	private void buttonPress(int btnNumber) {
@@ -123,8 +133,7 @@ public class WindowController {
 		panel.getBtnContinue().addActionListener(e -> mainMenu());
 		panel.getLblPointsEarned().setText("Puntos obtenidos: " + player.getPoints());
 		panel.getLblRoundsReached().setText("Ultimo nivel: " + player.getRoundsReached());
-		if(win) {
-			
+		if(win) {	
 			panel.getLblResult().setText("Felicitaciones, has ganado!");
 			panel.getLblResult().setForeground(Color.GREEN);
 		}
@@ -145,21 +154,24 @@ public class WindowController {
 		window.getFrame().setContentPane(panel);
 		window.getFrame().setVisible(true);
 		panel.getBtnMenu().addActionListener(e -> mainMenu());
-	}
+		populatePlayerTable(panel);
+	} 
 	
-	private void printContent() {
-		for(Round r: rounds) {
-			System.out.println(r.getAward());
-			System.out.println(r.getNumber());
-			Category c = r.getCategory();
-			for(Question q : c.getQuestions()) {
-				System.out.println("Pregunta: "+ q.getContent());
-				for(Answer a : q.getAnswers()) {
-					System.out.println("Respuesta: " +a.getContent());
-					System.out.println("Valida? "+ a.isValid());
-				}
-			}
-		}
+	private void populatePlayerTable(PlayerHistoryPanel panel) {
+		List<Player> players = playerDao.getPlayers();
+		Object[][] array = new Object[players.size()][3];
+        int fila = 0;
+        //Pasar datos de la lista de usuarios a un array[][] para llenar el modelo de la tabla
+        for (Player p: players) {
+        	array[fila][0]=p.getPoints();
+        	array[fila][1]=p.getRoundsReached();
+        	fila++;
+        }
+		String[] columnNames = {"Puntos","Nivel alcanzado"};
+		//Creación de la Tabla
+		DefaultTableModel model = new DefaultTableModel();
+		//Lleno el modelo con los datos
+		model.setDataVector(array, columnNames);
+		panel.getTable().setModel(model);
 	}
-		
 }
